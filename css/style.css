@@ -19,6 +19,10 @@
 .header .dropdown-item {
   color: #333;
 }
+.body{
+  background: #d14b4b;
+  color: #045750;
+}
 .overlay{
   background: rgba(130, 111, 173, 0.5);
   color: rgb(68, 68, 68);
@@ -57,11 +61,10 @@
 }
 .footer {
   padding: 5em 0;
-  background: #000000;
-  background: rgb(0, 0, 0);
+  background: #808080;
   line-height: 1.5;
 }
 .col-md-10 {
   width: 83.33333%;
-  color: #000000;
+  color: #808080;
 }
