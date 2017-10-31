@@ -9,19 +9,19 @@
   margin: 10rem 0;
 }
 .header {
-  background: url(../img/bg-header.jpg) center center no-repeat fixed;
+  background: url(../img/monumen1.png) center center no-repeat fixed;
   background-size: cover;
   overflow: hidden;
 }
 .header a {
-  color: #fff;
+  color: rgb(136, 136, 136);
 }
 .header .dropdown-item {
   color: #333;
 }
 .overlay{
-  background: rgba(49, 29, 94, 0.5);
-  color: #fff;
+  background: rgba(130, 111, 173, 0.5);
+  color: rgb(68, 68, 68);
   overflow: hidden;
 }
 .header>.overlay {
@@ -56,8 +56,12 @@
   min-height: 100vh;
 }
 .footer {
-    padding: 5em 0;
-    background: #fafafa;
-    background: #fff;
-    line-height: 1.5;
+  padding: 5em 0;
+  background: #000000;
+  background: rgb(0, 0, 0);
+  line-height: 1.5;
+}
+.col-md-10 {
+  width: 83.33333%;
+  color: #000000;
 }
