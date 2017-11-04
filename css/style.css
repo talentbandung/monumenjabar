@@ -3575,6 +3575,11 @@
 		}
 
 			#main .inner header p {
+				background-image: url(../img/monumen2.jpg), url(paper.gif);
+				background-position: right bottom, left top;
+				background-repeat: no-repeat, repeat;
+				padding: 15px;
+			}
 				font-size: 1em;
 				font-style: italic;
 				border-top: 1px solid rgba(144, 144, 144, 0.25);
