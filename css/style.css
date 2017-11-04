@@ -18,6 +18,7 @@
 	body {
 		background-color: #258cd1;
 		line-height: 1;
+		margin:0;
 	}
 
 	ol, ul {
@@ -1578,15 +1579,15 @@
 /* Type */
 
 	body {
-		background-color: #b783ff;
+		background-color: #ffffff;
 		color: rgb(0, 0, 0);
 	}
 
 	body, input, select, textarea {
 		font-family: "Lato", Arial, Helvetica, sans-serif;
-		font-size: 16pt;
+		font-size: 45pt;
 		font-weight: 300;
-		line-height: 1.75;
+		line-height: 1.62;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1600,7 +1601,7 @@
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -3589,6 +3590,8 @@
 			}
 
 				#main .inner {
+					background-image: url(../img/monumen2.jpg);
+					margin: 0;
 					width: 90%;
 				}
 
@@ -4514,20 +4517,20 @@
 
 	#footer {
 		padding: 3em 0 3em 0 4em;
-		background: #1c1c1c;
+		background: #000000;
 		text-align: center;
 	}
 
 		#footer a {
-			color: rgba(255, 255, 255, 0.75);
+			color: rgb(188, 93, 243);
 		}
 
 			#footer a:hover {
-				color: #fff;
+				color: rgb(243, 41, 41);
 			}
 
 		#footer .copyright {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgb(29, 165, 255);
 			font-size: 0.9em;
 			margin: 0 0 2em 0;
 			padding: 0;
