@@ -1591,148 +1591,51 @@
     	width:100%;
     	position:absolute;
 		}
-		
-		.gallerycontainer{
-			position: center;
-			}
-			
-			.thumbnail img{
-			border: 1px solid rgb(0, 0, 0);
-			margin: 0 5px 5px 0;
-			}
-			
-			.thumbnail:hover{
-			background-color: transparent;
-			}
-			
-			.thumbnail:hover img{
-			border: 1px solid blue;
-			}
-			
-			.thumbnail span{ 
-			position: absolute;
-			background-color: rgb(138, 138, 138);
-			padding: 5px;
-			left: -1000px;
-			border: 1px dashed gray;
-			visibility: hidden;
-			color: black;
-			text-decoration: none;
-			}
-			
-			.thumbnail span img{ 
-			border-width: 0;
-			padding: 2px;
-			}
-			
-			.thumbnail:hover span{ 
-			visibility: visible;
-			top: 0;
-			left: 230px; 
-			z-index: 50;
-			}
-			
-			#slider-wrapper{
-				width: 740px;
-				height: 470px;
-				margin: 50px auto;
-				position: relative;
-				margin-bottom: 0px;
-				background: rgba(0,0,0,0.5);
-				overflow: hidden;
-			}
-			
-					#s1{
-						padding: 6px;
-						background: #FFFFFF;
-						position: absolute;
-						left: 50%;
-						bottom: 25px;
-						margin-left: -36px;
-						border-radius: 20px;
-						opacity: 0.3;
-						cursor: pointer;
-						z-index: 999;
-					}
-					
-					#s2{
-						padding: 6px;
-						background: #FFFFFF;
-						position: absolute;
-						left: 50%;
-						bottom: 25px;
-						margin-left: -12px;
-						border-radius: 20px;
-						opacity: 0.3;
-						cursor: pointer;
-						z-index: 999;
-					}
-					
-					#s3{
-						padding: 6px;
-						background: #FFFFFF;
-						position: absolute;
-						left: 50%;
-						bottom: 25px;
-						margin-left: 12px;
-						border-radius: 20px;
-						opacity: 0.3;
-						cursor: pointer;
-						z-index: 999;
-					}
-					
-					#s4{
-						padding: 6px;
-						background: #FFFFFF;
-						position: absolute;
-						left: 50%;
-						bottom: 25px;
-						margin-left: 36px;
-						border-radius: 20px;
-						opacity: 0.3;
-						cursor: pointer;
-						z-index: 999;
-					}
-					
-					#s1:hover, #s2:hover, #s3:hover, #s4:hover{ opacity: 1;}
-					
-				.inner-wrapper{
-					width: 740px;
-					height: 470px;
-					position: absolute;
-					top: 0;
-					left: 0;
-					margin-bottom: 0px;
-					overflow: hidden;
-				}
-					.control{ display: none;}
-					
-					#Slide1:checked ~ .overflow-wrapper{ margin-left: 0%; }
-					#Slide2:checked ~ .overflow-wrapper{ margin-left: -100%; }
-					#Slide3:checked ~ .overflow-wrapper{ margin-left: -200%; }
-					#Slide4:checked ~ .overflow-wrapper{ margin-left: -300%; }
-					
-					#Slide1:checked + #s1 { opacity: 1; }
-					#Slide2:checked + #s2 { opacity: 1; }
-					#Slide3:checked + #s3 { opacity: 1; }
-					#Slide4:checked + #s4 { opacity: 1; }
-					
-				.overflow-wrapper{
-					width: 400%;
-					height: 100%;
-					position: absolute;
-					top: 0;
-					left: 0;
-					overflow-y: hidden;
-					z-index: 1;
-					-webkit-transition: all 0.3s ease-in-out;
-					-moz-transition: all 0.3s ease-in-out;
-					-o-transition: all 0.3s ease-in-out;
-					transition: all 0.3s ease-in-out;
-				}
-				
-					.slide img{
-						width: 25%;
-						float: left;
-					}
-								
+
+		/*Memberikan Border Pada image*/
+.img {
+    border: 1px solid #ccc; 
+}
+/*Memberikan efek pada saat pointer di tujukan ke image*/
+.img:hover {
+    border: 1px solid #777; 
+}
+/*Membuat lebar sesuai dengan ukuran lebar class responsive*/
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+/*membuat box-size pada body*/
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+/*berfungsi untuk mengubah style class responsive pada lebar maksimum 700px*/
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+/*berfungsi untuk mengubah style class responsive pada lebar maksimum 500px*/
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+/*clearfix adalah cara praktis yang digunakan untuk clear element yang sebelumnya mengalami float*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
